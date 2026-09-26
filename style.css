@@ -91,9 +91,10 @@ woocommerce a.button,
 /*  */
 
 /* Single product page image*/
-.woocommerce-js div.product div.images img {
-  height: 450px;
+.woocommerce-js div.product div.images .woocommerce-product-gallery__image img {
   width: 450px;
+  max-width: 100%;
+  height: auto;
   margin: auto;
 }
 /*  */
