@@ -168,6 +168,22 @@ woocommerce a.button,
     order: 1;
 }
 
+.woocommerce ul.products li.product .astra-shop-thumbnail-wrap img {
+    filter: grayscale(100%);
+    transition: filter 300ms ease;
+}
+
+.woocommerce ul.products li.product:hover .astra-shop-thumbnail-wrap img,
+.woocommerce ul.products li.product:focus-within .astra-shop-thumbnail-wrap img {
+    filter: grayscale(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .woocommerce ul.products li.product .astra-shop-thumbnail-wrap img {
+        transition: none;
+    }
+}
+
 .woocommerce ul.products li.product .astra-shop-summary-wrap {
     order: 2;
 }
